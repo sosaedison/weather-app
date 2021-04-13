@@ -1,3 +1,4 @@
 /dev
 weather_app/__pycache__
 *.pyc
+*/__pycache__

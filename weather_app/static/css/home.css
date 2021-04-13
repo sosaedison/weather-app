@@ -2,7 +2,36 @@
     margin: 0 auto;
 }
 
-.search {
-    width: 100vw;
+.weather-card-container {
+    max-width: 90vw;
+}
+
+#weather-card-list {
+    display: flex;
+    list-style: none;
+}
+
+.weather-card {
+    width: 150px;
+    height: 250px;
+}
+
+#add-new-card {
+    width: 150px;
+    height: 250px;
+}
+
+#add-new-card button {
+    position: relative;
+    top: 45%;
+}
+
+.card-body button {
+    border: none;
+    background-color: white;
+}
+
+.header h1 {
     text-align: center;
+    margin: 5%;
 }
