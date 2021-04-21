@@ -3,6 +3,8 @@
 }
 
 .weather-card-container {
+    display: flex;
+    justify-content: space-between;
     max-width: 90vw;
 }
 
@@ -14,6 +16,7 @@
 .weather-card {
     width: 150px;
     height: 250px;
+    margin: 5px;
 }
 
 #add-new-card {

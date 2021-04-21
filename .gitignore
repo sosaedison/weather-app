@@ -1,4 +1,6 @@
 /dev
 weather_app/__pycache__
 *.pyc
-*/__pycache__
+*/*/__pycache__
+.vscode
+.DS_STORE
