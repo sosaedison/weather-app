@@ -1,9 +1,14 @@
 import requests
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 
 class SearchWeatherAPI:
     def __init__(self):
-        self.API_ARG = "&appid=376944731769fe3b16fb7cb9d65da026"
+        self.API_KEY = os.environ.get("API_KEY")
+        self.API_ARG = f"&appid={self.API_KEY}"
         self.base_url = "http://api.openweathermap.org/data/2.5/weather?"
 
     def search_by_city(self, city_name):
