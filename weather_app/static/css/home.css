@@ -2,13 +2,13 @@
     margin: 0 auto;
 }
 
-.weather-card-container {
+.weather-card-list-container {
     display: flex;
     justify-content: space-between;
     max-width: 90vw;
 }
 
-#weather-card-list {
+.weather-card-list-main {
     display: flex;
     list-style: none;
 }
@@ -27,6 +27,16 @@
 #add-new-card button {
     position: relative;
     top: 45%;
+}
+
+.remove-card-button {
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    border: none;
+    background: none;
+    float: left;
+    top: 0;
 }
 
 .card-body button {
