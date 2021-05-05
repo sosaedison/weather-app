@@ -14,21 +14,27 @@
 
 <body>
   <div class="app">
-    <div class="header">
-      <h1>Good Morning Sir :) </h1>
-    </div>
-    <div class="weather-card-list-container">
-      <ul class="weather-card-list-master">
-        <li>
-        </li>
-        <li>
-          <div class="card weather-card" id="add-new-card">
-            <div class="card-body" id="">
-              <button id="add-new-card-button"><i class="fas fa-plus-circle"></i></button>
-            </div>
-          </div>
-        </li>
-      </ul>
+    <div class="form-container">
+      <form class="input-form" action="/search_by/city" method="POST">
+        <label for="city">City:</label>
+        <input class="api-input" type="text" name="city" id="city-input" placeholder="Minneapolis">
+        <input type="submit" value="Submit">
+      </form>
+      <br>
+      <form class="input-form" action="/search_by/zip_code" method="POST">
+        <label for="zip_code">Zip Code:</label>
+        <input type="text" name="zip_code" id="zip-code-input" placeholder="55443">
+        <input type="submit" value="Submit">
+      </form>
+      <br>
+      <form class="input-form" action="/search_by/lat_lon" method="POST">
+        <label for="lat">Lat:</label>
+        <input type="text" name="lat" id="lat-input" placeholder="10.002020"><br>
+        <label for="lon">Lon:</label>
+        <input type="text" name="lon" id="lon-input" placeholder="12.34567">
+        <input type="submit" value="Submit">
+      </form>
+      <br>
     </div>
   </div>
 </body>
